@@ -35,7 +35,7 @@
 
         /* Estilo para los títulos */
         h1 {
-            color: #fff;
+            color:#f3f3f3;
         }
 
         h4{
@@ -58,18 +58,23 @@
             margin-top: 5px;
         }
 
-
-
-        /* Estilo para centrar verticalmente el navbar y el main */
-        .container-fluid {
-            display: flex;
-            /*align-items: center;
-            height: 100vh; /* Altura completa */
-        }
-
         .break{
-            margin: 1.5rem 0.8rem 1rem;
+            margin: 3rem 0.8rem 1rem;
         }
+
+        /*estilo contac*/
+        #contact a {
+            margin-left: 8px;
+        }
+
+        /*Estilo project*/
+        #projects img{
+            max-width:75%;
+            height: auto;
+            border: 1.2px groove white; /* Añadir borde blanco de 2px */
+            transition: transform 0.5s; /* Transición suave para el efecto hover */
+        }
+        
 
         /* Estilo para el pie de página */
         footer {
@@ -88,6 +93,7 @@
                 margin-left: 50px; /* Margen izquierdo amplio */
                 margin-right: 50px; /* Margen derecho amplio */
                 margin-top: 50px;
+                font-size: 1.3rem;
             }
             
             .navbar {
@@ -97,6 +103,11 @@
                 height: 50vh; /* Altura completa */
                 overflow-y: auto; /* Permitir desplazamiento vertical */
                 padding-top: 20px; /* Espacio superior */
+            }
+
+            /*tamaño letra */
+            h5,h6{
+                font-size: 1.3rem;
             }
 
                 /* Estilo para hacer la imagen redondeada */
@@ -111,6 +122,21 @@
                 padding: 20px;
             }
 
+            /* Estilo para el efecto hover */
+            #projects img:hover {
+                transform: scale(1.1); /* Aumentar el tamaño al 110% en el hover */
+            }
+
+            /*Estilo projects container*/
+            #projects .row{
+                padding-bottom: 15px;
+            }
+
+            section#contact{
+                padding-bottom: 1.5rem;
+            }
+
+
             footer{
                 position: fixed;
             }
@@ -122,7 +148,7 @@
         <div class="row justify-content-md-center">
             <!-- Barra de navegación -->
             <div class="col-sm-12 col-md-2 text-md-center d-md-flex justify-content-md-center">
-                <nav class="navbar navbar-expand-lg navbar-dark ">
+                <nav class="navbar navbar-expand-md navbar-dark ">
                     <div class="container">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -150,7 +176,8 @@
                             <h6 class="my-3 muted ">Trainee Developer Java</h6>
                             <h1 class="mb-2 fw-bold">Monica Melgarejo</h1>
                             <img src="./static/img/Mi proyecto.jpg" alt="picture-Moni" class="rounded-circle profile-image">
-                            <p class="mb-0">¡Hola! Soy una apasionada desarrolladora Java en formación. Aquí encontrarás información sobre mí y mis proyectos.</p>
+                            <p class="mb-0 mt-2">¡Hola! Soy una entusiasta desarrolladora Java en formación, en busca de mi primer empleo en el campo de la programación.</p>
+                            <p mb-0> Aquí encontrarás información sobre mí y mis proyectos.</p>
                         </div>
                     </section>
                     
@@ -191,7 +218,7 @@
                             <!-- Proyecto 1 -->
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img src="./static/img/Mi proyecto.jpg" alt="Proyecto 1" class="img-fluid rounded">
+                                    <img src="./static/img/Mi proyecto.jpg" alt="Proyecto 1" class="rounded">
                                 </div>
                                 <div class="col-md-8 py-3">
                                     <h5>Titulo</h5>
